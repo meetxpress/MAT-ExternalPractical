@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.externalpractical">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExternalPractical">
+        <activity
+            android:name=".Question1_Viewprofile"
+            android:label="Question 1 View Profile"
+            android:parentActivityName=".Question1_dashboard" />
+        <activity
+            android:name=".Question1_ViewBooks"
+            android:label="Question 1 View Books"
+            android:parentActivityName=".Question1_dashboard" />
+        <activity
+            android:name=".Question1_dashboard"
+            android:label="Question 1 View Books"
+            android:parentActivityName=".Question1" />
+        <activity
+            android:name=".Question1_login"
+            android:label="Question 1 Login"
+            android:parentActivityName=".Question1" />
+        <activity
+            android:name=".Question2_Dashboard"
+            android:label="Question 2 Dashboard"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question2_login"
+            android:label="Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question2"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+        <activity
+            android:name=".Question1"
+            android:label="Question 1"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
